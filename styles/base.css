@@ -52,8 +52,8 @@ main{
 }
 
 
-h4 {
-
+.small-heading {
+    font-size: 18px;
     padding: 10px;
     box-sizing: border-box;
     /* border: 5px solid rgb(0, 37, 117);
@@ -113,7 +113,7 @@ h4 {
 
 .flag {
     border: 1px solid black;
-    margin: 10px;
+    margin: 0px 10px 0px;
     float: left;
     width: auto;
     height: 120px;
