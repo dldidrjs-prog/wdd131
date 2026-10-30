@@ -80,6 +80,10 @@ h3 {
     /* for example,  */
 }
 
+.card p {
+    font-family: var(--body-font);
+}
+
 #about-me {
     margin-top: 10px;
     padding: 20px;
