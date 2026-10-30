@@ -52,7 +52,9 @@ main{
 }
 
 
-h3 {
+#h3-size {
+    font-size: 18px;
+    font-weight: bold;
     padding: 10px;
     box-sizing: border-box;
     /* border: 5px solid rgb(0, 37, 117);
