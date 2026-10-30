@@ -1,6 +1,7 @@
 :root {
     --main-back-color: rgb(232, 164, 76);
     --heading-color: rgb(0, 37, 117);
+    --dark-red-color: darkred;
     --heading-font: "Inconsolata", "Raleway", serif;
     --body-font: "Raleway", "Inconsolata", Helvetica;
 }
@@ -11,7 +12,7 @@
 }
 
 header {
-    background-color: rgb(232, 164, 76);
+    background-color: var(--main-back-color);
 }
 
 #course-title {
@@ -19,7 +20,7 @@ header {
     padding: 15px;
     font-family: var(--heading-font);
     text-align: center;
-    color: rgb(0, 37, 117);
+    color: var(--heading-color);
 }
 
 header nav {
@@ -74,7 +75,7 @@ main{
 .card {
     box-sizing: border-box;
     border-radius: 1rem;
-    border: 3px solid darkred;
+    border: 3px solid var(--dark-red-color);
     padding: 0px;
     overflow: hidden; 
     /*  overflow: hidden; > prevent a space to not go beyond the border. */
@@ -96,7 +97,7 @@ main{
 #bold-letter {
     font-size: 1.2em;
     font-weight: bold;
-    border-bottom: 1px solid darkred;
+    border-bottom: 1px solid var(--dark-red-color);
     width: 250px;
     text-align: center;
     margin-left: 150px;
@@ -143,12 +144,12 @@ main{
 
 nav a:hover {
 	text-decoration: underline;
-    color: rgb(232, 164, 76);
+    color: var(--main-back-color);
 }
 
 footer {
     margin: 10px;
-    border-top: 5px solid rgb(232, 164, 76);
+    border-top: 5px solid var(--main-back-color);
     text-align: center;
     background-color: var(--heading-color);
     color: white;
@@ -156,11 +157,11 @@ footer {
 }
 
 #lastModified {
-    color: rgb(232, 164, 76);
+    color: var(--main-back-color);
 }
 
 ul li a:hover {
     text-decoration: underline;
-    color: rgb(232, 164, 76);
+    color: var(--main-back-color);
     background-color: var(--heading-color);
 }
