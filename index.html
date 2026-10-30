@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Lee Yanggun</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - About myself - Lee Yanggun">
+    <meta name="author" content="Lee Yanggun">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
+
 <body>
-    <h1>Hello, World!</h1>
+
+
+    <header>
+        <h1><span id="course-title">WDD 131 - Dynamic Web Fundamentals</span></h1>
+        <nav>
+            <a href="https://www.linkedin.com/home">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/8?lang=kor">Favorite Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+
+
+    <main class="main-grid">
+        <h1>Lee Yanggun</h1>
+
+        <section class="card">
+            <h3>About me</h3>
+            <img src="images/woody.jpg" alt="Golden Retriever Woody" class="picture">
+            <p id="about-me">My name is Lee Yanggun. I was born in South Korea and I live my family in Seoul. I am cuurently working as a Police Officer. The reason why I started to learn this course is improving myself and affording my family more good chances. I love to learn new skills.
+            </p>
+            
+            <p id="bold-letter">Seoul, South Korea</p>
+            <div class="flag-container">
+                <img src="images/flag-south-korea.jpg" alt="flag of south-korea" class="flag">
+                <p id="south-korea">South Korea is a country located in East Asia, in the southern part of the Korean Peninsula south of the Military Demarcation Line. It is abbreviated as “Hanguk” (Korea) and is also called “Namhan” (South Korea). Its current system of government is the Sixth Republic of the Republic of Korea.</p>
+            </div>
+            <p class="explain">Official Flag</p>
+            
+        </section>
+
+        <section class="card">
+            <h3>Web Dev Resources</h3>
+            <nav>
+                <ui>
+                    <li><a href="">Dev.to Coummuity</a></li>
+                    <li><a href="">Smashing Magazine</a></li>
+                    <li><a href="">CSS Tricks</a></li>
+                    <li><a href="">W3 Schools</a></li>
+                    <li><a href="">Udemy</a></li>
+                    <li><a href="">Lorem Picsum Image Placeholder</a></li>
+                </ui>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+
+        <p>&copy; <span id="currentyear"></span>🚓Lee Yanggun🚓 South Korea</p>
+        <p><span id="lastModified"></span></p>
+        
+    </footer>
+
+
 </body>
 </html>

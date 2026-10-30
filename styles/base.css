@@ -1,0 +1,149 @@
+:root {
+    --main-back-color: rgb(232, 164, 76);
+    --heading-color: rgb(0, 37, 117);
+    --heading-font: "Inconsolata", "Raleway", serif;
+    --body-font: "Raleway", "Inconsolata", Helvetica;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+header {
+    background-color: rgb(232, 164, 76);
+}
+
+#course-title {
+    display: block;
+    padding: 15px;
+    font-family: var(--heading-font);
+    text-align: center;
+    color: rgb(0, 37, 117);
+}
+
+header nav {
+    padding: 5px;
+    font-family: var(--body-font);
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--heading-color);
+
+}
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    padding: 10px;
+    font-family: var(--body-font);
+
+}
+
+
+.main-grid h1 {
+    margin: 10px;
+    padding-top: 10px;
+
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    padding: 0 30px;
+}
+
+
+h3 {
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 5px solid rgb(0, 37, 117);
+    border-radius: 1rem; */
+
+    background-color: var(--main-back-color);
+    text-align: center;
+}
+
+.main-grid h1 {
+    text-align: center;
+    grid-column: 1 / 4;
+    font-family: var(--heading-font);
+}
+
+.card {
+    box-sizing: border-box;
+    border-radius: 1rem;
+    border: 3px solid darkred;
+    padding: 0px;
+    overflow: hidden; 
+    /*  overflow: hidden; > prevent a space to not go beyond the border. */
+    /* for example,  */
+}
+
+#about-me {
+    margin-top: 10px;
+    padding: 20px;
+}
+#south-korea {
+    margin-right: 20px;
+}
+
+#bold-letter {
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 1px solid darkred;
+    width: 250px;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.picture {
+    border: 1px solid black;
+    margin: 10px;
+    float: right;
+    width: 120px;
+    height: auto;
+
+}
+
+.flag {
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    width: auto;
+    height: 120px;
+}
+
+.explain {
+    text-align: center;
+    width: 120px;
+    margin: 10px 20px 30px;
+}
+
+.flag-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.card nav {
+    display: flex;
+    align-items: center;
+    height: 90%;
+    margin-left: 30px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+    color: rgb(232, 164, 76);
+}
+
+footer {
+    margin: 10px;
+    border-top: 5px solid rgb(232, 164, 76);
+    text-align: center;
+    background-color: var(--heading-color);
+    color: white;
+    font-size: 1.1em;
+}
