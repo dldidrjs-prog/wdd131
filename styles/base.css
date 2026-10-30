@@ -39,11 +39,9 @@ header nav a {
 
 }
 
-
-.main-grid h1 {
-    margin: 10px;
-    padding-top: 10px;
-
+/* 그냥 넣은거임. 아무의미 없음. */
+main{
+    padding: 0;
 }
 
 .main-grid {
@@ -65,6 +63,8 @@ h3 {
 }
 
 .main-grid h1 {
+    margin: 10px;
+    padding-top: 10px;
     text-align: center;
     grid-column: 1 / 4;
     font-family: var(--heading-font);
@@ -132,11 +132,12 @@ h3 {
 
 }
 
-.card nav {
+.card ul {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 90%;
-    margin-left: 30px;
+    gap: 5px;
 }
 
 nav a:hover {
