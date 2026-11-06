@@ -1,0 +1,141 @@
+:root {
+    --main-orange-color: rgb(255, 166, 0);
+    --main-blue-color: rgb(0, 29, 92);
+    --heading-color: rgb(0, 29, 92);
+    --dark-red-color: darkred;
+    --heading-font: "Inconsolata", "Raleway", serif;
+    --body-font: "Raleway", "Inconsolata", Helvetica;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+header {
+
+    text-align: center;
+    background-color: var(--main-orange-color);
+}
+
+
+#course-title {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+header nav {
+    margin-top: 10px;
+    padding: 10px 0px;
+    font-family: var(--heading-font);
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--main-blue-color);
+    color: white;
+}
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.main-grid h1 {
+    font-family: var(--heading-font);
+    color: rgb(61, 47, 10);
+    text-align: center;
+    padding: 20px;
+    grid-column: 1 / -1;
+}
+
+
+.card {
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 3px solid darkred;
+    border-radius: 1rem;
+    margin: 10px;
+}
+
+#about-me {
+    font-family: var(--body-font);
+    padding: 10px;
+}
+
+.small-heading {
+    background-color: var(--main-orange-color);
+    color: var(--heading-color);
+    text-align: center;
+}
+
+#bold-letter{
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: var(--body-font);
+    border-bottom: 2px solid var(--dark-red-color);
+    width: 200px;
+    text-align: center;
+
+}
+
+.picture {
+    float: right;
+    display: block;
+    width: 110px;
+    height: auto;
+    margin: 10px;
+}
+
+.flag-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#south-korea {
+    padding: 0px 10px 10px 15px;
+}
+
+.explain {    
+    text-align: center;
+    width: 150px;
+    font-weight: bold;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    margin-top: -15px;
+
+}
+
+.flag {
+    float: left;
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    gap: 5px;
+    padding-right: 5px;
+}
+
+footer {
+    font-weight: bold;
+    font-size: 1.1em;
+    border-top: 4px solid var(--heading-color);
+    text-align: center;
+    background-color: var(--main-orange-color);
+}
