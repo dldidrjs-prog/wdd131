@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-wide.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>South Korea</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/seoul-wide-1.webp" media="(min-width: 1000px)">
+                <img src="images/seoul-small-1.webp" alt="Seoul" width="1500" height="750">
+            </picture>
+
+            <section class="data">
+                <h2>Data</h2>
+
+                <dl>
+                    <dt>Area</dt>
+                    <dd>100,363km²</dd>
+
+                    <dt>Population</dt>
+                    <dd>51,609,121</dd>
+
+                    <dt>Capital</dt>
+                    <dd>Seoul</dd>
+
+                    <dt>Languages</dt>
+                    <dd>Korean(Hangle)</dd>
+
+                    <dt>Currency</dt>
+                    <dd>Won(KRW ₩)</dd>
+
+                    <dt>Time Zone</dt>
+                    <dd>GMT+9</dd>
+
+                    <dt>Calling Code</dt>
+                    <dd>+82</dd>
+
+                    <dt>Internet TLD</dt>
+                    <dd>.kr / .한국</dd>
+                </dl>
+            </section>
+        
+            <section class="weather">
+                <h2 class="cloudy">Weather</h2>
+                <img src="images/cloud.svg" alt="cloud">
+
+                <dl>
+                    <dt>Temperature</dt>
+                    <dd>10°</dd>
+
+                    <dt>Conditions</dt>
+                    <dd>Cloudy</dd>
+
+                    <dt>Wind</dt>
+                    <dd>1m/s</dd>
+
+                    <dt>Wind Chill</dt>
+                    <dd id="windChill"></dd>
+                </dl>
+
+            </section>
+        
+        </div>
+
+            
+
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; Lee Yanggun - South Korea</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
