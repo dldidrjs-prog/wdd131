@@ -1,0 +1,130 @@
+:root {
+    --main-back-color: rgb(232, 164, 76);
+    --heading-color: rgb(0, 37, 117);
+    --dark-red-color: darkred;
+    --heading-font: "Bricolage Grotesque", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+
+#h1-size {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--heading-font);
+}
+
+
+header {
+    background-color: var(--main-back-color);
+    color: var(--heading-color);
+    display: flex;
+    flex-wrap: wrap;
+    /* wrap 중요 */
+    justify-content: space-between;
+    /* button도 같이있는데 가려진 상태. 그래서 양옆에 나뉘어보임. 사실상 한줄에 p, button, nav가 있는것. */
+    align-items: center;
+    /* 글 세로 중앙 정렬. */
+    padding: 1rem;
+}
+
+
+#menu {
+    color: var(--heading-color);
+    cursor: pointer;
+    /* 갖다대면 포인터모양 바뀜 */
+    background: none;
+    border: none;
+}
+#menu:hover {
+    color: white;
+}
+#menu::before {
+    content: "☰";
+}
+#menu.open::before {
+    content: "✖";
+}
+
+
+nav {
+    font-family: var(--body-font);
+    /* display: none; 혹은 max-height: 0; & overflow: hidden;
+    둘중 하나 해도 현재결과 작동함. */
+    display: none;
+    /* max-height: 0; */
+    /* overflow: hidden; */
+    width: 100%;
+    flex-direction: column;
+    /* 이게 있어서 펼쳤을때 아래로감. */
+    justify-content: space-around;
+    align-items: center;
+    /* 글 세로 중앙 정렬 */
+}
+nav.open {
+    display: flex;
+    max-height: 400px;
+}
+
+nav a {
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--heading-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+nav a:hover {
+    color: white;
+}
+
+.grid-temples {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    min-width: 0;
+}
+
+.grid-temples h1 {
+    font-family: var(--heading-font);
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--heading-color);
+}
+
+.grid-temples img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+figure {
+    text-align: center;
+    font-family: var(--body-font);
+}
+
+footer {
+    border-top: 5px solid orange;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin: 0px;
+}
+
+#lastModified {
+    color: orange;
+}

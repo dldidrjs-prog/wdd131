@@ -1,0 +1,47 @@
+:root {
+    --orange: rgb(255, 115, 0);
+    --black: black;
+    --white: white;
+    --dark-blue: darkblue;
+    --light-gray: lightgray;
+}
+
+.total-title, .empty{
+    border: 1px solid var(--dark-blue);
+}
+
+
+table {
+    width: 400px;
+    text-align: center;
+    border: 1px solid var(--light-gray);
+    border-collapse: collapse;
+}
+tr, th, td {
+    height: 40px;
+    border: 1px solid var(--light-gray);
+}
+caption {
+    padding: 10px;
+    caption-side: bottom;
+	color: var(--orange);
+	font-size: 0.8rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+th:first-child {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+th:nth-child(2), th:nth-child(3), th:nth-child(4){
+    background-color: var(--orange);
+
+}
+
+tr:nth-child(2) {
+    background-color: var(--orange);
+}

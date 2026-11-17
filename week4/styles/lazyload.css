@@ -1,0 +1,17 @@
+img {
+    animation: fadeblack 5s ease-in;
+    /* animation-name: fadeblack;       @keyframes 이름 */
+    /* animation-duration: 15s;              걸리는 시간 */
+    /* animation-timing-function: ease-in;  속도 곡선 */
+    display: block;
+    margin: 0 auto 2rem;
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+
+}
+/* 애니메이션 넣을 변수 이름 명명. fadeblack 이 그 역할. */
+@keyframes fadeblack {
+    from { opacity: 0; }   /* 시작(완전 투명) */
+    to   { opacity: 1; }   /* 끝(원래 밝기) */
+}

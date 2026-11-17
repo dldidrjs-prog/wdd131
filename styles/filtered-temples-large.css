@@ -1,0 +1,22 @@
+
+@media screen and (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+        max-height: none;
+        overflow: visible;
+    }
+    .grid-temples {grid-template-columns: repeat(2, 1fr);}
+}
+
+@media screen and (min-width: 900px) {
+    .grid-temples {grid-template-columns: repeat(3, minmax(0, 1fr));}
+    .grid-temples section p {
+        font-size: 12px;
+    }
+}
