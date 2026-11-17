@@ -103,12 +103,6 @@ nav a:hover {
     
 }
 
-.grid-temples h1 {
-    font-family: var(--heading-font);
-    grid-column: 1 / -1;
-    text-align: center;
-    color: var(--heading-color);
-}
 
 .grid-temples img {
     width: 100%;
