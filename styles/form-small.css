@@ -1,0 +1,163 @@
+:root {
+    --darkblue-color: rgb(1, 10, 87);
+    --white-color: white;
+    --warm-gray: #d8d8d7;
+    --darkred-color: darkred;
+    --black-color: black;
+    --orange-color: orange;
+    --heading-font: "Inconsolata", "Raleway", serif;
+    --body-font: "Raleway", "Inconsolata", "Raleway", Helvetica;
+}
+
+/* remove spaces between header, main and footer */
+header h1,
+footer p {
+    margin: 0;
+}
+
+
+main form {
+    background-color: var(--warm-gray);
+    color: var(--darkblue-color);
+    font-family: var(--body-font);
+    width: 450px;
+    
+}
+main form legend {
+    font-weight: bold;
+}
+h1 {
+    background-color: var(--darkblue-color);
+    color: var(--white-color);
+    font-family: var(--heading-font);
+    text-align: center;
+    width: 450px;
+    padding: 10px 0;
+}
+
+.page_border {
+    border-color: var(--black-color);
+}
+.page{
+    font-family: var(--body-font);
+    color: var(--black-color);
+    font-size: 1.2rem;
+}
+.product_name {
+    margin-top: 5px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    border-color: rgb(5, 68, 36);
+    border-radius: 0.3rem;
+    height: 60px;
+}
+.product_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.rating {
+    margin-top: 15px;
+    padding: 10px;
+    border-color: rgb(5, 68, 36);
+    border-radius: 0.3rem;
+    font-family: var(--heading-font);
+}
+.rating_flex {
+    display: flex;
+    justify-content: space-around;
+}
+.rating label {
+    font-size: 1.2rem;
+    -webkit-text-stroke: 0.5px currentColor;
+}
+.rating_circle {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3px;
+    color: var(--darkred-color);
+}
+
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+
+.date {
+    margin-top: 15px;
+    font-family: var(--heading-font);
+    border-color: rgb(5, 68, 36);
+    border-radius: 0.3rem;
+    height: 40px;
+}
+.date input{
+    width: 100%;
+}
+
+.useful {
+    margin-top: 15px;
+    font-family: var(--heading-font);
+    border-color: rgb(5, 68, 36);
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+.useful p {
+    margin-top: 1px;
+    font-size: 13px;
+}
+.useful label {
+    margin: 5px;
+    font-weight: bold;
+    gap: 5px;
+    color:var(--darkred-color);
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.writtenReview {
+    margin-top: 15px;
+    font-family: var(--heading-font);
+    border-color: rgb(5, 68, 36);
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.yourName {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    width: 150px;
+    height: 30px;
+    font-size: 1.2rem;
+    display: block;
+    margin: 16px auto;
+}
+input[type="submit"]:hover {
+    background-color: var(--orange-color);
+    cursor: pointer;
+}
+
+footer {
+    width: 450px;
+    background-color: var(--darkblue-color);
+    color: var(--white-color);
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 0;
+}
