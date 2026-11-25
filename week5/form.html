@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <fieldset class="page_border">
+                <legend class="page">Review Page</legend>
+                <fieldset class="product_name">
+                    <legend>Product Name</legend>
+                    <div class="product_flex">
+                        <label for="productName">Choose your product</label>
+                        <select id="productName" name="productName" required>
+                            <option value="">Please Select a Product...</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="rating">
+                    <legend>Overall Rating</legend>
+                    <div class="rating_flex">
+                        <label class="rating_circle" for="rating"><input type="radio" id="rating" name="rating" value="&star;" required><span class="stars">&star;</span></label>
+                        <label class="rating_circle" for="rating"><input type="radio" id="rating" name="rating" value="&star;&star;" required>&star;&star;</label>
+                        <label class="rating_circle" for="rating"><input type="radio" id="rating" name="rating" value="&star;&star;&star;" required>&star;&star;&star;</label>
+                        <label class="rating_circle" for="rating"><input type="radio" id="rating" name="rating" value="&star;&star;&star;&star;" required>&star;&star;&star;&star;</label> 
+                        <label class="rating_circle" for="rating"><input type="radio" id="rating" name="rating" value="&star;&star;&star;&star;&star;" required>&star;&star;&star;&star;&star;</label> 
+                    </div>
+                </fieldset>
+
+                <fieldset class="date">
+                    <legend>Date of Installation</legend>
+                    <label for="date"><input type="date" id="date" name="date" required></label>
+                </fieldset>
+                
+                <fieldset class="useful">
+                    <legend>Please choose useful features did you find</legend>
+                    <p>(Check all that apply)</p>
+                    <label for="useful"><input type="checkbox" id="useful" name="useful">Durability</label>
+                    <label for="useful"><input type="checkbox" id="useful" name="useful">Design</label>
+                    <label for="useful"><input type="checkbox" id="useful" name="useful">Price</label>
+                    <label for="useful"><input type="checkbox" id="useful" name="useful">After Service</label>
+                </fieldset>
+
+                <fieldset class="writtenReview">
+                    <legend>Written Review <span>(Optional)</span></legend>
+                    <label for="comment"></label>
+                    <textarea id="comment" name="comment" rows="6"></textarea>
+                    
+                    <label class="yourName" for="yourName">Your name</label>
+                    <input type="text" id="yourName" name="yourName">
+                </fieldset>
+
+                <input type="submit" value="Post my review">
+
+            </fieldset>
+            
+
+
+        </form>
+    </main>
+
+
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🚓Lee Yanggun🚓 South Korea</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
