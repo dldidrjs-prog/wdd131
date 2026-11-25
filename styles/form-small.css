@@ -20,7 +20,7 @@ main form {
     background-color: var(--warm-gray);
     color: var(--darkblue-color);
     font-family: var(--body-font);
-    width: 450px;
+
     
 }
 main form legend {
@@ -31,7 +31,7 @@ h1 {
     color: var(--white-color);
     font-family: var(--heading-font);
     text-align: center;
-    width: 450px;
+
     padding: 10px 0;
 }
 
@@ -50,6 +50,12 @@ h1 {
     border-color: rgb(5, 68, 36);
     border-radius: 0.3rem;
     height: 60px;
+}
+.product_name label {
+    font-weight: 400;
+}
+.product_name select {
+    font-size: 1.1rem;
 }
 .product_flex {
     display: flex;
@@ -91,10 +97,11 @@ input[type="radio"] {
     font-family: var(--heading-font);
     border-color: rgb(5, 68, 36);
     border-radius: 0.3rem;
-    height: 40px;
+    height: 60px;
 }
 .date input{
     width: 100%;
+    font-size: 1.1rem;
 }
 
 .useful {
@@ -133,11 +140,10 @@ input[type="checkbox"] {
     flex-direction: column;
 }
 
-
 .yourName {
     margin-top: 10px;
-    font-weight: bold;
 }
+
 
 input[type="submit"] {
     width: 150px;
@@ -152,7 +158,6 @@ input[type="submit"]:hover {
 }
 
 footer {
-    width: 450px;
     background-color: var(--darkblue-color);
     color: var(--white-color);
     font-family: var(--heading-font);
