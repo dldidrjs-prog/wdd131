@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review</title>
+    <title>Product Review Page</title>
+    <meta name="description" content="WDD 131 – Product Review Page with Responsive one - Lee Yanggun">
+    <meta name="author" content="Lee Yanggun">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -25,7 +27,7 @@
                     <div class="product_flex">
                         <label for="productName">Choose your product</label>
                         <select id="productName" name="productName" required>
-                            <option value="">Please Select a Product...</option>
+                            <option value="" disabled selected>Please Select a Product...</option>
                         </select>
                     </div>
                 </fieldset>
@@ -33,11 +35,11 @@
                 <fieldset class="rating">
                     <legend>Overall Rating</legend>
                     <div class="rating_flex">
-                        <label class="rating_circle" for="rating"><input type="radio" id="rating" name="rating" value="&star;" required><span class="stars">&star;</span></label>
-                        <label class="rating_circle" for="rating"><input type="radio" id="rating" name="rating" value="&star;&star;" required>&star;&star;</label>
-                        <label class="rating_circle" for="rating"><input type="radio" id="rating" name="rating" value="&star;&star;&star;" required>&star;&star;&star;</label>
-                        <label class="rating_circle" for="rating"><input type="radio" id="rating" name="rating" value="&star;&star;&star;&star;" required>&star;&star;&star;&star;</label> 
-                        <label class="rating_circle" for="rating"><input type="radio" id="rating" name="rating" value="&star;&star;&star;&star;&star;" required>&star;&star;&star;&star;&star;</label> 
+                        <label class="rating_circle" for="rating"><input type="radio" id="rating1" name="rating" value="1" required><span class="stars">&star;</span></label>
+                        <label class="rating_circle" for="rating"><input type="radio" id="rating2" name="rating" value="2" required>&star;&star;</label>
+                        <label class="rating_circle" for="rating"><input type="radio" id="rating3" name="rating" value="3" required>&star;&star;&star;</label>
+                        <label class="rating_circle" for="rating"><input type="radio" id="rating4" name="rating" value="4" required>&star;&star;&star;&star;</label> 
+                        <label class="rating_circle" for="rating"><input type="radio" id="rating5" name="rating" value="5" required>&star;&star;&star;&star;&star;</label> 
                     </div>
                 </fieldset>
 
@@ -49,10 +51,10 @@
                 <fieldset class="useful">
                     <legend>Please choose useful features did you find</legend>
                     <p>(Check all that apply)</p>
-                    <label for="useful"><input type="checkbox" id="useful" name="useful">Durability</label>
-                    <label for="useful"><input type="checkbox" id="useful" name="useful">Design</label>
-                    <label for="useful"><input type="checkbox" id="useful" name="useful">Price</label>
-                    <label for="useful"><input type="checkbox" id="useful" name="useful">After Service</label>
+                    <label for="useful"><input type="checkbox" id="useful1" name="useful">Durability</label>
+                    <label for="useful"><input type="checkbox" id="useful2" name="useful">Design</label>
+                    <label for="useful"><input type="checkbox" id="useful3" name="useful">Price</label>
+                    <label for="useful"><input type="checkbox" id="useful4" name="useful">After Service</label>
                 </fieldset>
 
                 <fieldset class="writtenReview">
